@@ -865,7 +865,6 @@
     <header>
         <nav>
             <div class="logo-container">
-                <!-- استبدل الرابط التالي برابط لوجو الخاص بك -->
                 <img src="https://www2.0zz0.com/2025/12/24/11/440314758.png" alt="MVNNOOO Logo" class="header-logo">
             </div>
             <ul class="nav-links">
@@ -972,8 +971,6 @@
         </div>
     </section>
 
-  
-
     <section id="about">
         <div class="section-header">
             <h2 class="section-title">عن الفنان</h2>
@@ -1042,7 +1039,8 @@
         </div>
     </section>
 
-    <section id="platforms">
+    <!-- تم تغيير id من "platforms" إلى "music" ليتوافق مع رابط التنقل -->
+    <section id="music">
         <div class="section-header">
             <h2 class="section-title">استمع على جميع المنصات</h2>
         </div>
@@ -1085,7 +1083,8 @@
             </a>
         </div>
     </section>
-  <section id="albums">
+
+    <section id="albums">
         <div class="section-header">
             <h2 class="section-title">الألبومات والأغاني المنفردة</h2>
             <a href="#music" class="see-all">عرض الكل</a>
@@ -1115,7 +1114,8 @@
         </div>
     </section>
     
-    <footer>
+    <!-- تم إضافة id="contact" إلى الـ footer -->
+    <footer id="contact">
         <div class="footer-content">
             <div class="footer-section">
                 <h3>MVNNOOO</h3>
@@ -1185,7 +1185,7 @@
 
         // تفعيل التنقل النشط
         const navLinks = document.querySelectorAll('.nav-links a');
-        const sections = document.querySelectorAll('section[id]');
+        const sections = document.querySelectorAll('section[id], footer[id]'); // تم تحديث هذا السطر
 
         window.addEventListener('scroll', () => {
             let current = '';
