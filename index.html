@@ -22,6 +22,8 @@
             --spotify-blue: #1DA1F2;
             --spotify-card: #181818;
             --spotify-sidebar: #000000;
+            --apple-pink: #FA2C76;
+            --youtube-red: #FF0000;
         }
 
         body {
@@ -990,6 +992,14 @@
             background: #1DB954;
         }
 
+        .embed-icon.apple {
+            background: linear-gradient(135deg, #FA2C76, #FF6B9D);
+        }
+
+        .embed-icon.youtube {
+            background: #FF0000;
+        }
+
         .embed-icon.anghami {
             background: linear-gradient(135deg, #D31027, #EA384D);
         }
@@ -1724,6 +1734,34 @@
                     <p class="embed-description">صفحة الفنان الرسمية على Spotify. تابع MVNNOOO للحصول على أحدث إصداراته، واستمع إلى كامل أعماله الموسيقية، واحصل على توصيات شخصية.</p>
                 </div>
                 
+                <!-- تضمين Apple Music -->
+                <div class="embed-item">
+                    <div class="embed-header">
+                        <div class="embed-icon apple">
+                            <i class="fab fa-apple"></i>
+                        </div>
+                        <h3 class="embed-title">Apple Music - أغنية "بداية"</h3>
+                    </div>
+                    <div class="embed-wrapper">
+                        <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/song/%D8%A8%D8%AF%D8%A7%D9%8A%D8%A9-feat-mohamed-saad-abd-elhameed-remastered-2025/1856093852"></iframe>
+                    </div>
+                    <p class="embed-description">استمع إلى أغنية "بداية" على Apple Music. تتميز Apple Music بأعلى جودة صوتية ومكتبة ضخمة من الموسيقى العالمية والعربية.</p>
+                </div>
+                
+                <!-- تضمين YouTube -->
+                <div class="embed-item">
+                    <div class="embed-header">
+                        <div class="embed-icon youtube">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <h3 class="embed-title">YouTube - الفيديو الموسيقي</h3>
+                    </div>
+                    <div class="embed-wrapper">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/MkJL3wVTBWg?si=gVRq8lr80qxKtL1m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border-radius: 8px;"></iframe>
+                    </div>
+                    <p class="embed-description">شاهد الفيديو الموسيقي الرسمي لـ MVNNOOO على YouTube. استمتع بتجربة بصرية وسمعية كاملة مع أحدث إصدارات الفنان.</p>
+                </div>
+                
                 <!-- تضمين Anghami -->
                 <div class="embed-item">
                     <div class="embed-header">
@@ -1733,7 +1771,7 @@
                         <h3 class="embed-title">Anghami - الموسيقى العربية</h3>
                     </div>
                     <div class="embed-wrapper">
-                        <iframe src="https://widget.anghami.com/artist/26394054/?theme=fulldark&layout=list&lang=en" scrolling="no" frameborder="0" width="100%" height="450"></iframe>
+                        <iframe src="https://widget.anghami.com/artist/26394054/?theme=fulldark&layout=list&lang=en" scrolling="no" frameborder="0" width="100%" height="450" style="border-radius: 8px;"></iframe>
                     </div>
                     <p class="embed-description">استمع إلى MVNNOOO على منصة أنغامي الرائدة في الموسيقى العربية. اكتشف جميع أغانيه وقوائم التشغيل المميزة الخاصة به.</p>
                 </div>
@@ -1747,7 +1785,7 @@
                         <h3 class="embed-title">Deezer - الأغاني الأكثر شعبية</h3>
                     </div>
                     <div class="embed-wrapper">
-                        <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/artist/358069852/top_tracks" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+                        <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/artist/358069852/top_tracks" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write" style="border-radius: 8px;"></iframe>
                     </div>
                     <p class="embed-description">استمع إلى الأغاني الأكثر شعبية لـ MVNNOOO على Deezer. تشمل هذه القائمة أفضل أغانيه حسب عدد مرات الاستماع والإعجابات.</p>
                 </div>
