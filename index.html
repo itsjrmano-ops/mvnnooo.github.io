@@ -529,6 +529,80 @@
             color: var(--light);
         }
 
+        /* قسم البودكاست */
+        .podcast-container {
+            background: var(--card);
+            border-radius: var(--radius-sm);
+            padding: 20px;
+            margin: 20px 15px;
+        }
+
+        .podcast-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .podcast-title {
+            color: var(--primary);
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin-bottom: 5px;
+        }
+
+        .podcast-subtitle {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
+        .spotify-embed {
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            box-shadow: var(--shadow);
+        }
+
+        .spotify-embed iframe {
+            display: block;
+            width: 100%;
+        }
+
+        .spotify-cta {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .spotify-cta-text {
+            color: var(--gray);
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        .spotify-button {
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: var(--radius-xs);
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: var(--transition);
+            box-shadow: 0 4px 12px rgba(29, 185, 84, 0.3);
+        }
+
+        .spotify-button:hover, .spotify-button:active {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(29, 185, 84, 0.4);
+        }
+
+        .spotify-button i {
+            font-size: 1.2rem;
+        }
+
         /* شريط التنقل السفلي */
         .bottom-nav {
             position: fixed;
@@ -951,6 +1025,65 @@
             </div>
         </section>
 
+        <!-- صفحة البودكاست -->
+        <section id="podcast" class="content-section">
+            <div class="hero-section">
+                <div class="podcast-container">
+                    <div class="podcast-header">
+                        <h2 class="podcast-title">البودكاست</h2>
+                        <p class="podcast-subtitle">استمع إلى حلقات البودكاست الحصرية مع MVNNOOO</p>
+                    </div>
+                    
+                    <div class="spotify-embed">
+                        <!-- تضمين حلقة البودكاست من Spotify -->
+                        <iframe 
+                            data-testid="embed-iframe"
+                            style="border-radius:12px" 
+                            src="https://open.spotify.com/embed/episode/04fqfZRmW7SlTWdLdsQWtq?utm_source=generator&theme=0" 
+                            width="100%" 
+                            height="352" 
+                            frameBorder="0" 
+                            allowfullscreen="" 
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                    
+                    <div class="spotify-cta">
+                        <p class="spotify-cta-text">استمع إلى المزيد من الحلقات على تطبيق Spotify</p>
+                        <a href="https://open.spotify.com/show/your-podcast-id" target="_blank" class="spotify-button">
+                            <i class="fab fa-spotify"></i>
+                            <span>استمع على Spotify</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- معلومات إضافية عن البودكاست -->
+                <div class="collapsible-section" style="margin-top: 30px;">
+                    <div class="section-header" onclick="toggleSection('podcast-info')">
+                        <h3 class="section-title">عن البودكاست</h3>
+                        <i class="fas fa-chevron-down section-icon" id="podcast-info-icon"></i>
+                    </div>
+                    <div class="section-content" id="podcast-info">
+                        <div class="about-content">
+                            <p>في بودكاست MVNNOOO، نستكشف عالم الموسيقى، الإبداع، وحياة الفنانين. يناقش MVNNOOO رحلته الفنية، التحديات، والنصائح للفنانين الناشئين.</p>
+                            
+                            <p><strong>مواضيع الحلقات:</strong></p>
+                            <ul style="padding-right: 20px; margin-bottom: 15px; color: var(--gray);">
+                                <li>صناعة الموسيقى والتوزيع</li>
+                                <li>تجربة الفنانين المستقلين</li>
+                                <li>مشهد التراب والدريل المصري</li>
+                                <li>نصائح للفنانين الناشئين</li>
+                                <li>خلف كواليس صناعة الأغاني</li>
+                            </ul>
+                            
+                            <p>يتم نشر حلقات جديدة شهريًا على منصة Spotify. اشترك في القناة لتلقي إشعارات بالحلقات الجديدة.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- صفحة عن الفنان -->
         <section id="about" class="content-section">
             <div class="hero-section">
@@ -1094,7 +1227,7 @@
                     <div class="section-content" id="app-info">
                         <div style="color: var(--gray); font-size: 0.9rem; line-height: 1.8;">
                             <p><strong>MVNNOOO - التطبيق الرسمي</strong></p>
-                            <p>هذا التطبيق يوفر وصولاً سريعاً إلى جميع محتوى الفنان MVNNOOO على المنصات المختلفة.</p>
+                            <p>هذا التطبيق يوفر وصولاً سريعاً إلى جميع محتوى الفنان MVNNOOO على المنصات المختلفة، بما في ذلك الموسيقى، البودكاست، والمزيد.</p>
                             
                             <div style="margin-top: 20px;">
                                 <p><strong>مميزات التطبيق:</strong></p>
@@ -1102,13 +1235,14 @@
                                     <li>تصفح سريع وسهل</li>
                                     <li>واجهة مخصصة للجوال</li>
                                     <li>وصول مباشر لجميع المنصات</li>
+                                    <li>قسم بودكاست حصري</li>
                                     <li>معلومات محدثة عن الفنان</li>
                                     <li>دعم وضع عدم الاتصال</li>
                                 </ul>
                             </div>
                             
                             <div style="margin-top: 20px; text-align: center;">
-                                <p>الإصدار: 1.0.0</p>
+                                <p>الإصدار: 1.1.0 (أضيف قسم البودكاست)</p>
                                 <p style="margin-top: 10px;">© 2025 MVNNOOO. جميع الحقوق محفوظة.</p>
                             </div>
                         </div>
@@ -1132,6 +1266,10 @@
         <a href="#music" class="nav-item" data-section="music">
             <i class="fas fa-music nav-icon"></i>
             <span class="nav-label">الموسيقى</span>
+        </a>
+        <a href="#podcast" class="nav-item" data-section="podcast">
+            <i class="fas fa-podcast nav-icon"></i>
+            <span class="nav-label">البودكاست</span>
         </a>
         <a href="#about" class="nav-item" data-section="about">
             <i class="fas fa-user nav-icon"></i>
@@ -1314,7 +1452,7 @@
 
         // إعداد تأثيرات اللمس
         function setupTouchEffects() {
-            const touchElements = document.querySelectorAll('.track-item, .album-card, .stat-card, .platform-btn');
+            const touchElements = document.querySelectorAll('.track-item, .album-card, .stat-card, .platform-btn, .spotify-button');
             
             touchElements.forEach(element => {
                 element.classList.add('touch-feedback');
