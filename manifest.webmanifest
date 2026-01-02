@@ -1,21 +1,28 @@
 {
-  "name": "MVNNOOO Website",
-  "short_name": "MVNNOOO",
-  "description": "موقع PWA احترافي لموقع MVNNOOO",
-  "start_url": "index.html",
-  "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#ff0055",
-  "icons": [
-    {
-      "src": "assets/icons/icon.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "assets/icons/icon.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
-  ]
+    "name": "MVNNOOO",
+    "short_name": "MVNNOOO",
+    "description": "فنان رابر من الإسكندرية، يصنع موسيقى التراب المصري والدريل",
+    "start_url": "/MVNNOOO-Website/",
+    "display": "standalone",
+    "background_color": "#191414",
+    "theme_color": "#1DB954",
+    "orientation": "portrait",
+    "scope": "/MVNNOOO-Website/",
+    "lang": "ar",
+    "dir": "rtl",
+    "categories": ["music", "entertainment"],
+    "icons": [
+        {
+            "src": "assets/icons/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "assets/icons/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
 }
