@@ -1,0 +1,21 @@
+{
+  "name": "MVNNOOO Website",
+  "short_name": "MVNNOOO",
+  "description": "موقع PWA احترافي لموقع MVNNOOO",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ff0055",
+  "icons": [
+    {
+      "src": "assets/icons/icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
