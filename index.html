@@ -377,26 +377,27 @@
             box-shadow: var(--shadow);
         }
 
-        .amazon-music-embed iframe {
-            display: block;
-            width: 100%;
-            border: none;
-        }
+/* تضمين TikTok */
+.tiktok-embed-wrapper {
+    width: 100%;
+    margin: 25px 0;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    background: var(--card);
+    box-shadow: var(--shadow);
+}
 
-        <div class="tiktok-embed-wrapper">
-    <blockquote
-        class="tiktok-embed"
-        cite="https://www.tiktok.com/@mvnnoooo"
-        data-unique-id="mvnnoooo"
-        data-embed-type="creator"
-    >
-        <section>
-            <a href="https://www.tiktok.com/@mvnnoooo" target="_blank">@mvnnoooo</a>
-        </section>
-    </blockquote>
-</div>
+.tiktok-embed-wrapper iframe,
+.tiktok-embed-wrapper blockquote {
+    display: block;
+    width: 100%;
+    border: none;
+}
 
-<script async src="https://www.tiktok.com/embed.js"></script>
+.tiktok-embed-wrapper blockquote {
+    margin: 0;
+}
+
 
         /* تضمين Apple Music */
         .apple-music-container {
